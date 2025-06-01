@@ -106,14 +106,14 @@ install_xray(){
   },
   "dns": {
     "hosts": {
-      "dns.google": "8.8.8.8",
+      "dns.google": "8.8.8.8"
     },
     "servers": [
       {
         "address": "1.1.1.1",
         "skipFallback": true,
         "domains": [
-          "domain:googleapis.cn",
+          "domain:googleapis.cn"
         ]
       },
       "1.1.1.1",
