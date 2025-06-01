@@ -172,6 +172,8 @@ install_xray(){
     }
   ],
   "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "domainMatcher": "linear",
     "rules": [
       {
         "type": "field",
