@@ -104,6 +104,22 @@ install_xray(){
   "log": {
     "loglevel": "warning"
   },
+  "dns": {
+    "hosts": {
+      "cloudflare-dns.com": "1.1.1.1"
+    },
+    "servers": [
+      {
+        "address": "1.1.1.1",
+        "skipFallback": true,
+        "domains": [
+          "domain:amazon.com"
+        ]
+      },
+      "1.1.1.1",
+      "https://cloudflare-dns.com/dns-query"
+    ]
+  },
   "inbounds": [ 
     {
       "listen": "0.0.0.0",
@@ -175,7 +191,9 @@ install_xray(){
   "outbounds": [
     {
       "protocol": "freedom",
-      "settings": {}
+      "settings": {
+      "domainStrategy": "UseIP",
+      "userLevel": 0}
     },
     {
     "tag": "blocked",
@@ -353,4 +371,3 @@ menu(){
 }
 
 menu
-
