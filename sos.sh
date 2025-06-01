@@ -166,8 +166,8 @@ install_xray(){
         "auth": "password",
         "accounts": [
           {
-            "user": "chenyufei",
-            "pass": "Open3758246"
+            "user": "chenyu",
+            "pass": "Kien6658247"
           }
         ],
         "udp": true
