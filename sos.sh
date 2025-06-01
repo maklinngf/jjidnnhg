@@ -111,7 +111,7 @@ install_xray(){
     "servers": [
       {
         "address": "1.1.1.1",
-        "skipFallback": true,
+        "skipFallback": false,
         "domains": [
           "domain:googleapis.cn"
         ]
