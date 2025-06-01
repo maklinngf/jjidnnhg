@@ -105,6 +105,9 @@ install_xray(){
     "loglevel": "warning"
   },
   "dns": {
+    "hosts": {
+      "cloudflare-dns.com": "8.8.8.8"
+    },
     "servers": [
       {
         "address": "1.1.1.1",
@@ -115,7 +118,7 @@ install_xray(){
       },
       "1.1.1.1",
       "1.0.0.1",
-      "https://1.1.1.1/dns-query"
+      "https://cloudflare-dns.com/dns-query"
     ]
   },
   "inbounds": [ 
@@ -190,8 +193,8 @@ install_xray(){
   },
   "outbounds": [
     {
-      "protocol": "freedom",
-      "settings": {
+    "protocol": "freedom",
+    "settings": {
       "domainStrategy": "UseIPv4",
       "userLevel": 0}
     },
