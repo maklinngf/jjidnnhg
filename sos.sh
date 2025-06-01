@@ -106,7 +106,7 @@ install_xray(){
   },
   "dns": {
     "hosts": {
-      "cloudflare-dns.com": "8.8.8.8"
+      "cloudflare-dns.com": "1.1.1.1"
     },
     "servers": [
       {
