@@ -117,7 +117,7 @@ install_xray(){
         ]
       },
       "1.1.1.1",
-      "8.8.8.8",
+      "1.0.0.1",
       "https://dns.google/dns-query"
     ]
   },
@@ -193,7 +193,7 @@ install_xray(){
     {
       "protocol": "freedom",
       "settings": {
-      "domainStrategy": "UseIP",
+      "domainStrategy": "UseIPv4",
       "userLevel": 0}
     },
     {
