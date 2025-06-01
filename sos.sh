@@ -113,7 +113,7 @@ install_xray(){
         "address": "1.1.1.1",
         "skipFallback": true,
         "domains": [
-          "domain:amazon.com"
+          "domain:name.com"
         ]
       },
       "1.1.1.1",
