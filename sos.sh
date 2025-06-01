@@ -106,18 +106,19 @@ install_xray(){
   },
   "dns": {
     "hosts": {
-      "cloudflare-dns.com": "1.1.1.1"
+      "dns.google": "8.8.8.8",
     },
     "servers": [
       {
         "address": "1.1.1.1",
         "skipFallback": true,
         "domains": [
-          "domain:name.com"
+          "domain:googleapis.cn",
         ]
       },
       "1.1.1.1",
-      "https://cloudflare-dns.com/dns-query"
+      "8.8.8.8",
+      "https://dns.google/dns-query"
     ]
   },
   "inbounds": [ 
