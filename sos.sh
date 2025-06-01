@@ -105,9 +105,6 @@ install_xray(){
     "loglevel": "warning"
   },
   "dns": {
-    "hosts": {
-      "dns.google": "8.8.8.8"
-    },
     "servers": [
       {
         "address": "1.1.1.1",
@@ -118,7 +115,7 @@ install_xray(){
       },
       "1.1.1.1",
       "1.0.0.1",
-      "https://dns.google/dns-query"
+      "https://1.1.1.1/dns-query"
     ]
   },
   "inbounds": [ 
