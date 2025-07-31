@@ -10,7 +10,7 @@
       "settings": {
         "clients": [
           {
-            "id": "9f5d3d3e-fcef-4e15-81e8-c53b591c59b5", 
+            "id": "b70ab5e2-0ae0-4667-8cd6-98857fd7b016", 
             "flow": "xtls-rprx-vision" 
           }
         ],
@@ -26,9 +26,9 @@
           "serverNames": [ 
             "www.sega.com" 
           ],
-          "privateKey": "EKtcsLYSKevdqrW9ohYRV_0JECI2_i1B67ufBnHZ1nE", 
+          "privateKey": "8B9YvCZ4wNNr206-ilokfMe21gACMFTAAJb2z3TVm0k", 
           "shortIds": [ 
-            "fcc51034ca6c30b8"
+            "aa1d75251768a13c"
           ]
         }
       },
