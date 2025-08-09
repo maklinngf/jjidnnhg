@@ -4,10 +4,10 @@ enen#!/bin/bash
 PORT="${1:-23100}"
 
 DOH=()
-DOH+=("https://cloudflare-dns.com/dns-query")
 DOH+=("1.1.1.1")
 DOH+=("8.8.8.8")
-DOH+=("https://dns.adguard.com/dns-query")
+DOH+=("https://doh.opendns.com/dns-query")
+DOH+=("https://cloudflare-dns.com/dns-query")
 DOH+=("https://doh.dns.sb/dns-query")
 DOH+=("https://doh.cleanbrowsing.org/doh/family-filter/")
 DOH+=("https://doh.mullvad.net/dns-query")
