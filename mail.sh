@@ -795,7 +795,6 @@ if __name__ == '__main__':
         ssl_context=ssl_ctx,
         require_starttls=True
     )
-    controller._server.hostname = "mail.comaiqq.com"
     controller.start()
     app.logger.info("✅ SMTP 服务器已启动，支持 STARTTLS，加密传输启用。")
 
