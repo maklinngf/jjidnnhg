@@ -759,7 +759,7 @@ def manage_users():
         </ul>
         </div></body></html>
     ''', users=users, SYSTEM_TITLE=SYSTEM_TITLE)
-ALLOWED_DOMAINS = ["comaiqq.com"]
+ALLOWED_DOMAINS = None
 class CustomSMTPHandler:
     async def handle_DATA(self, server, session, envelope):
         # 防止 Open Relay：检查收件人域名是否属于允许的范围
