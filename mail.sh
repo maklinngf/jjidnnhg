@@ -200,7 +200,7 @@ install_server() {
     ADMIN_PASSWORD_HASH=$(${PROJECT_DIR}/venv/bin/python3 -c "from werkzeug.security import generate_password_hash; print(generate_password_hash('''$ADMIN_PASSWORD'''))")
     cat << 'EOF' > ${PROJECT_DIR}/app.py
 # -*- coding: utf-8 -*-
-import sqlite3, re, os, math, html, logging, sys
+import sqlite3, re, os, math, html, logging, sys, ssl
 from functools import wraps
 from flask import Flask, request, Response, redirect, url_for, session, render_template_string, flash, get_flashed_messages, jsonify
 from email import message_from_bytes
