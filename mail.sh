@@ -790,8 +790,8 @@ if __name__ == '__main__':
     # --- 启动 SMTP 服务 ---
     controller = Controller(
         CustomSMTPHandler(),
-        hostname='0.0.0.0',  # 显示在 SMTP banner 里的主机名
-        port=25,
+        hostname='mail.comaiqq.com',   # SMTP Banner 显示的域名
+        localaddr=('0.0.0.0', 25), 
         ssl_context=ssl_ctx,
         require_starttls=True
     )
