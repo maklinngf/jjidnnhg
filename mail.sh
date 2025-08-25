@@ -759,14 +759,16 @@ def manage_users():
         </ul>
         </div></body></html>
     ''', users=users, SYSTEM_TITLE=SYSTEM_TITLE)
-ALLOWED_DOMAINS = None
+ALLOWED_DOMAINS = None  # None 表示不限制
+
 class CustomSMTPHandler:
     async def handle_DATA(self, server, session, envelope):
-        # 防止 Open Relay：检查收件人域名是否属于允许的范围
-        for rcpt in envelope.rcpt_tos:
-            rcpt_domain = rcpt.split("@")[-1].lower()
-            if rcpt_domain not in ALLOWED_DOMAINS:
-                return "550 5.7.1 Relay access denied"
+        # 如果 ALLOWED_DOMAINS 有值才检查收件人域名
+        if ALLOWED_DOMAINS:
+            for rcpt in envelope.rcpt_tos:
+                domain = rcpt.split("@")[-1].lower()
+                if domain not in ALLOWED_DOMAINS:
+                    return "550 5.7.1 Relay access denied"
 
         try:
             process_email_data(','.join(envelope.rcpt_tos), envelope.content)
@@ -774,6 +776,7 @@ class CustomSMTPHandler:
         except Exception as e:
             app.logger.error(f"处理邮件时发生严重错误: {e}")
             return '500 Error processing message'
+
 if __name__ == '__main__':
     init_db()
 
