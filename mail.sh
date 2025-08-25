@@ -792,7 +792,7 @@ if __name__ == '__main__':
         CustomSMTPHandler(),
         hostname='mail.comaiqq.com',  # 显示在 SMTP banner 里的主机名
         port=25,
-        ssl_context=None,
+        ssl_context=ssl_ctx,
         require_starttls=True
     )
 
