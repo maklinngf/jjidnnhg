@@ -2,9 +2,9 @@ enen#!/bin/bash
 
 
 PORT="${1:-23100}"
-DOH+=("https://dns0.eu/dns-query")
+DOH+=("https://dns.google/dns-query")
 DOH+=("https://185.222.222.222/dns-query")
-DOH+=("https://94.140.14.15/dns-query")
+DOH+=("https://cloudflare-dns.com/dns-query")
 DOH+=("https://doh.pub/dns-query")
 DOH+=("https://freedns.controld.com/p3")
 DOH+=("https://helios.plan9-dns.com/dns-query")
