@@ -39,6 +39,20 @@
           "tls"
         ]
       }
+    },
+          {
+      "port": 20000,
+      "protocol": "socks",
+      "settings": {
+        "auth": "password",
+        "accounts": [
+          {
+            "user": "chenyu",
+            "pass": "Kien6658247"
+          }
+        ],
+        "udp": true
+      }
     }
   ],
   "routing": {
